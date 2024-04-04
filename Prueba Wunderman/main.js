@@ -7,6 +7,8 @@ const sinopsisTitle = document.querySelector('.sinopsis-txt h1');
 const sinopsisPlot = document.querySelector('.sinopsis-txt p');
 const bg = document.querySelector('.bg');
 const trailer = document.querySelector('.trailer-btn')
+const arrwLeft = document.querySelector('.arrw-left')
+const arrwRight = document.querySelector('.arrw-right')
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -90,25 +92,38 @@ document.addEventListener("DOMContentLoaded", function() {
   function updateMovieDisplay(index) {
     const firstMovie = moviesData[index];
 
+    if (posterImg && sinopsisTitle && sinopsisPlot && bg && trailer) {
+        // Set poster image source
+        posterImg.src = firstMovie.Poster;
+        posterImg.alt = firstMovie.Title;
 
-    if (posterImg && sinopsisTitle && sinopsisPlot && bg) {
-      // Set poster image source
-      posterImg.src = firstMovie.Poster;
-      posterImg.alt = firstMovie.Title;
-      trailer.href = firstMovie.Trailer
+        // Set trailer link
+        trailer.href = firstMovie.Trailer;
 
-      // Set sinopsis title
-      sinopsisTitle.textContent = firstMovie.Title;
+        // Set sinopsis title
+        sinopsisTitle.textContent = firstMovie.Title;
 
-      // Set sinopsis plot
-      sinopsisPlot.textContent = firstMovie.Plot;
+        // Set sinopsis plot
+        sinopsisPlot.textContent = firstMovie.Plot;
 
-      // Set background image
-      bg.style.backgroundImage = `url(${firstMovie.Poster})`;
+        // Set background image
+        bg.style.backgroundImage = `url(${firstMovie.Poster})`;
+
+        // Handle arrow visibility based on the current movie index
+        if (index === 0) {
+            arrwLeft.style.display = 'none'; // Hide left arrow for the first movie
+            arrwRight.style.display = 'flex'; // Show right arrow for the first movie
+        } else if (index === 2) {
+            arrwRight.style.display = 'none'; // Hide right arrow for the third movie
+            arrwLeft.style.display = 'flex'; // Show left arrow for the third movie
+        } else {
+            arrwRight.style.display = 'flex'; // Show left arrow for the second movie
+            arrwLeft.style.display = 'flex'; // Show right arrow for the second movie
+        }
     } else {
-      console.error('One or more elements not found');
+        console.error('One or more elements not found');
     }
-  }
+}
 
   function cycleMovies(direction) {
     if (direction === 'left') {
