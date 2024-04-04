@@ -12,7 +12,7 @@
   --btn-color: #554f95;
   --txt: #ffff;
   --txt-back: #a9a9a9;
-  --txt-sinopsis: #3A3A3A;
+  --txt-sinopsis: #3a3a3a;
 }
 
 img {
@@ -20,6 +20,11 @@ img {
   height: auto;
 }
 
+h2{
+    color: var(--txt);
+    margin-top: 3vh;
+    font-size: 3rem;
+}
 .btn {
   background-color: var(--btn-color);
   color: var(--txt);
@@ -116,15 +121,15 @@ nav ul li:first-child {
   margin: 20px;
   margin-left: 0px;
   border-left: 0px;
-  border-top-left-radius:0px ;
-  border-bottom-left-radius:0px ;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
-.sinopsis-txt{
-    padding: 20px;
+.sinopsis-txt {
+  padding: 20px;
 }
 
-.sinopsis-txt h1{ 
+.sinopsis-txt h1 {
   font-size: 4rem;
   font-weight: normal;
   border-bottom: 3px solid black;
@@ -144,21 +149,22 @@ nav ul li:first-child {
   gap: 20px;
 }
 
-.grid-btns a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.grid-btns a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .grid-btns p {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
-.grid-btns img{
-    height: 100px;
-    width: auto;}
+.grid-btns img {
+  height: 100px;
+  width: auto;
+}
 
 .arrw-right {
   grid-area: 1 / 8 / 4 / 9;
@@ -167,8 +173,51 @@ nav ul li:first-child {
   align-items: center;
 }
 
-.arrw img{
+.arrw img {
   width: 100px;
   height: auto;
 }
 
+.cartelera-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 90vh;
+  margin-bottom: 10vh;
+}
+
+.pelicula {
+  height: 30vh;
+  width: 15%;
+  color: white;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.pelicula a {
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0 0 12px 12px;
+  vertical-align: top;
+}
+
+.pelicula img {
+  height: auto;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 10px;
+  vertical-align: top;
+}
+
+.pelicula p:first-child {
+  font-size: 1.3rem;
+  width: 100%;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Display an ellipsis for truncated text */
+}
