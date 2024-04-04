@@ -9,6 +9,7 @@ const bg = document.querySelector('.bg');
 const trailer = document.querySelector('.trailer-btn')
 const arrwLeft = document.querySelector('.arrw-left')
 const arrwRight = document.querySelector('.arrw-right')
+const puntaje = document.querySelector('.puntaje')
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -108,6 +109,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Set background image
         bg.style.backgroundImage = `url(${firstMovie.Poster})`;
+
+        puntaje.textContent = firstMovie.imdbRating + "/10";
 
         // Handle arrow visibility based on the current movie index
         if (index === 0) {

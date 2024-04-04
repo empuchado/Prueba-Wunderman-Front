@@ -4,6 +4,7 @@
   box-sizing: content-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -26,14 +27,14 @@ h2{
     font-size: 3rem;
 }
 .btn {
-  background-color: var(--btn-color);
-  color: var(--txt);
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
+    background: var(--btn-color);
+    color: var(--txt);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
 
 body {
   background-color: var(--bg-color);
@@ -123,10 +124,42 @@ nav ul li:first-child {
 }
 .poster {
   grid-area: 1 / 2 / 4 / 4;
+
+}
+
+.extra-info {
+    position: absolute;
+    background-color: var(--btn-color);
+    top: 20vh;
+    left: 15vw;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    height: 60px;
+    width: 60px;
+  }
+
+.extra-info img {
+  width: 20px;
+  height: auto;
+}
+.extra-info p {
+  color: var(--txt);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.extra-info p:first-of-type{
+    font-weight: normal;
 }
 
 .poster img{
     border-radius: 12px;
+    position: relative;
 }
 .sinopsis {
   grid-area: 1 / 4 / 3 / 8;
@@ -236,4 +269,10 @@ nav ul li:first-child {
   white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden; /* Hide any overflowing text */
   text-overflow: ellipsis; /* Display an ellipsis for truncated text */
+}
+
+.pop {
+    background-image: url(img/pop-efect.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
