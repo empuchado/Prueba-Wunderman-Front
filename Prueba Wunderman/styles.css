@@ -84,14 +84,27 @@ nav ul li:first-child {
 
 .slider-cntnr {
   height: 100vh;
-  background-image: url("img/BG-1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.bg{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+
 
 .grilla-hero {
   display: grid;
