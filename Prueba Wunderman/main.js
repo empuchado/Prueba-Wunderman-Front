@@ -2,6 +2,11 @@ const section = document.querySelector('.cartelera-flex');
 const posterElement = document.querySelector(".poster");
 const titleElement = document.querySelector(".sinopsis h1");
 const plotElement = document.querySelector(".sinopsis p");
+const posterImg = document.querySelector('.poster img');
+const sinopsisTitle = document.querySelector('.sinopsis-txt h1');
+const sinopsisPlot = document.querySelector('.sinopsis-txt p');
+const bg = document.querySelector('.bg');
+const trailer = document.querySelector('.trailer-btn')
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -84,15 +89,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function updateMovieDisplay(index) {
     const firstMovie = moviesData[index];
-    const posterImg = document.querySelector('.poster img');
-    const sinopsisTitle = document.querySelector('.sinopsis-txt h1');
-    const sinopsisPlot = document.querySelector('.sinopsis-txt p');
-    const bg = document.querySelector('.bg');
+
 
     if (posterImg && sinopsisTitle && sinopsisPlot && bg) {
       // Set poster image source
       posterImg.src = firstMovie.Poster;
       posterImg.alt = firstMovie.Title;
+      trailer.href = firstMovie.Trailer
 
       // Set sinopsis title
       sinopsisTitle.textContent = firstMovie.Title;
