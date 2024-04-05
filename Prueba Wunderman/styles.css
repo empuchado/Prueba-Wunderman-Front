@@ -312,12 +312,14 @@ nav ul li:first-child {
     margin-bottom: 20px;
     font-size: 1.0rem;
     margin-top: 20PX;
+    font-weight: bold;
 }
 
 .btn-reseña{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 form .btn {
     width: 40%;
@@ -325,6 +327,8 @@ form .btn {
     border: 2px solid var(--btn-color);
     background-color: transparent;
     font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 0px;
 }
 
 #reiniciar{
@@ -334,6 +338,4 @@ form .btn {
     width: 40%;
     font-size: 1rem;
     margin-top: 20px;
-
-
 }
