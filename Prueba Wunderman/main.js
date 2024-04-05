@@ -15,6 +15,10 @@ const selectPeliculas = document.querySelector('#pelicula');
 const nombre = document.querySelector('#nombre');
 const emailInput = document.querySelector('#email');
 const reseñaInput = document.querySelector('#reseña');
+const finalizarButton = document.querySelector('#finalizar');
+let nombreValid = false;
+let emailValid = false;
+let reseñaValid = false;
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -229,5 +233,25 @@ window.addEventListener('load', async () => {
       if (errorMessage && errorMessage.className === 'error-message') {
         errorMessage.remove();
       }
+    }
+  });
+
+  finalizarButton.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    if (nombre.value.length >= 4) {
+      nombreValid = true;
+    }
+  
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+      emailValid = true;
+    }
+  
+    if (reseña.value.length >= 10) {
+      reseñaValid = true;
+    }
+  
+    if (!nombreValid || !emailValid || !reseñaValid) {
+      alert('Por favor, llene todos los campos correctamente.');
+    } else {
     }
   });
