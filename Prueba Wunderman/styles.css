@@ -391,3 +391,19 @@ align-items: center;
 padding-top: 5px;
 padding-left: 5px;
 }
+
+.pop-1{
+  position: absolute;
+  top: -10vh;
+  left: 70vw;
+  width: 30vw;
+  height: auto;
+}
+
+.pop-2{
+  position: absolute;
+  top: 40vh;
+  left: 0vw;
+  width: 30vw;
+  height: auto;
+}
