@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream View | Reseña</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="reseña-page">
+    <main>
+      <header>
+        <nav class="contenedor flex-header">
+          <a href="#"><img src="img/Logo.png" alt="" /></a>
+          <ul>
+            <li><a href="#">Destacadas</a></li>
+            <li><a href="#cartelera">cartelera</a></li>
+            <li><a class="btn" href="">Comprar ticket</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="section-form">
+        <section class="contenedor form-container">
+          <h1>Reseña de películas</h1>
+          <p>deja tu opinion</p>
+          <div class="form">
+            <form>
+              <label for="pelicula">Seleccionar película:</label>
+              <select class="formbox" id="pelicula" name="pelicula">
+                <option value="pelicula1">Película 1</option>
+                <option value="pelicula2">Película 2</option>
+                <option value="pelicula3">Película 3</option>
+              </select>
+              <br />
+
+              <label for="nombre">Nombre completo:</label>
+              <input
+                class="formbox"
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Juan Perez"
+              />
+              <br />
+
+              <label for="email">Email:</label>
+              <input
+                class="formbox"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="juan.perez@test.com"
+              />
+              <br />
+
+              <label for="resena">Reseña:</label>
+              <textarea
+                class="formbox"
+                id="resena"
+                name="resena"
+                rows="4"
+                cols="50"
+              ></textarea>
+              <br />
+              <div class="btn-reseña">
+                <button class="btn" type="submit" id="finalizar">
+                  Finalizar
+                </button>
+                <button type="reset" id="reiniciar">Reiniciar</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
