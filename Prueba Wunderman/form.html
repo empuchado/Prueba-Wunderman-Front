@@ -26,18 +26,28 @@
           <div class="form">
             <form>
               <label for="pelicula">Seleccionar película:</label>
-              <select class="formbox" id="pelicula" name="pelicula">
-              </select>
+              <div class="select-container">
+                <select class="formbox" id="pelicula" name="pelicula">
+                </select>
+                <div class="icon-arrow">
+                  <i class="arrow down"></i>
+                </div>
+              </div>
+
+
+
               <br />
 
-              <label for="nombre">Nombre completo:</label>
-              <input
-                class="formbox"
-                type="text"
-                id="nombre"
-                name="nombre"
-                placeholder="Juan Perez"
-              />
+              <div class="position-box">
+                <label for="nombre" class="label-name">Nombre completo:</label>
+                <input
+                  class="formbox"
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Juan Perez"
+                />
+              </div>
               <br />
 
               <label for="email">Email:</label>
