@@ -466,9 +466,22 @@ display: flex;
     flex-wrap: wrap;
   }
 
-  .sinopsis{
-    display: none;
+  .sinopsis {
+    background-color: transparent;
+    border: 0;
+    color: var(--txt);
+    margin: 0;
   }
+
+.sinopsis-txt p{
+  display: none;
+}
+
+.sinopsis-txt h1{
+  font-size: 1.5rem; 
+  border: 0; 
+  margin-bottom: 0;
+}
 
   .arrw-left{
     width: 15vw;
@@ -499,11 +512,14 @@ display: flex;
 font-size: .7rem  ;
   }
 
-  .sinopsis .sinopsis-txt h1{
-    display: block;
-    position: absolute;
-    top: 90vh;
-    left: 0;
+
+
+  .grid-btns div a img{
+    width: 80px;
+    height: 80px;
+  }
+  .grid-btns p{
+    font-size: 1rem;
   }
 
 
