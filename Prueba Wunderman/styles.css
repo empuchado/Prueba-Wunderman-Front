@@ -304,7 +304,7 @@ nav ul li:first-child {
 
 .formbox {
   color: var(--txt);
-  background-color: transparent;
+  background-color: var(--bg-color-2);
   border: solid 2px var(--btn-color);
   border-radius: 10px;
   padding: 15px;
@@ -540,4 +540,44 @@ font-size: .7rem  ;
     height: 70vh;
     margin-bottom: 10vh;
   }
+
+  .section-form h1{
+    font-size: 1.7rem;
+    width: 50vw;
+    margin-bottom: 20px;
+  }
+  .section-form p{
+    margin-bottom: 20px;
+  }
+
+  .section-form .contenedor {
+    width: 90vw;
+  }
+
+  .formbox{
+    width: 80vw;
+    z-index: 1;
+  }
+  .icon-arrow{
+      left: 75vw;
+  }
+
+  .arrow {
+    padding:8px;
+  }
+
+  .pop-2{
+    display: none;
+  }
+
+  .pop-1{
+    display: none;}
+
+  .section-form{
+    background-image: url(img/pop-efect.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+  }
+  
 }
