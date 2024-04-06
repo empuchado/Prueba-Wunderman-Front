@@ -70,7 +70,7 @@ nav {
   flex-direction: row;
 }
 
-.tkt-header{
+.tkt-header {
   display: none;
 }
 
@@ -267,9 +267,9 @@ nav ul li:first-child {
 .pelicula p:first-child {
   font-size: 1.3rem;
   width: 100%;
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide any overflowing text */
-  text-overflow: ellipsis; /* Display an ellipsis for truncated text */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .pop {
@@ -416,9 +416,9 @@ form .btn {
 }
 /* -------------------------------------------------------------- */
 
-.section-message{
+.section-message {
   height: 100vh;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -426,23 +426,22 @@ form .btn {
   display: none;
 }
 
-.section-message img{
+.section-message img {
   height: 15vh;
   width: auto;
   margin-bottom: 30px;
 }
 
-.section-message h2{
+.section-message h2 {
   font-size: 2rem;
   margin-bottom: 30px;
 }
 
-.section-message p{
+.section-message p {
   font-size: 1.5rem;
-
 }
 
-.section-message p:first-of-type{
+.section-message p:first-of-type {
   color: var(--txt-back);
 }
 
@@ -451,14 +450,14 @@ form .btn {
     display: none;
   }
 
-  .tkt-header{
+  .tkt-header {
     display: block;
     height: 70px;
     width: auto;
   }
 
   .grilla-hero {
-display: flex;
+    display: flex;
     width: 95vw;
     flex-direction: row;
     justify-content: center;
@@ -473,59 +472,57 @@ display: flex;
     margin: 0;
   }
 
-.sinopsis-txt p{
-  display: none;
-}
+  .sinopsis-txt p {
+    display: none;
+  }
 
-.sinopsis-txt h1{
-  font-size: 1.5rem; 
-  border: 0; 
-  margin-bottom: 0;
-}
+  .sinopsis-txt h1 {
+    font-size: 1.5rem;
+    border: 0;
+    margin-bottom: 0;
+  }
 
-  .arrw-left{
+  .arrw-left {
     width: 15vw;
     position: absolute;
     top: 40vh;
     left: 0;
   }
-  .arrw-right{
+  .arrw-right {
     width: 15vw;
     position: absolute;
     top: 40vh;
     left: 85vw;
   }
 
-  .poster{
+  .poster {
     width: 60vw;
     margin-top: 100px;
   }
 
-  .extra-info{
+  .extra-info {
     width: 30px;
     height: 30px;
     padding: 23px;
     border-radius: 10px;
   }
 
-  .extra-info p{
-font-size: .7rem  ;
+  .extra-info p {
+    font-size: 0.7rem;
   }
 
-
-
-  .grid-btns div a img{
+  .grid-btns div a img {
     width: 80px;
     height: 80px;
   }
-  .grid-btns p{
+  .grid-btns p {
     font-size: 1rem;
   }
 
-  .cartelera-flex{
+  .cartelera-flex {
     flex-wrap: nowrap;
     overflow-x: auto;
-    -ms-overflow-style: none; /* Hides the scrollbar in IE and Edge */
+    -ms-overflow-style: none;
     scrollbar-width: none;
     align-items: flex-start;
   }
@@ -536,17 +533,17 @@ font-size: .7rem  ;
     flex: 0 0 auto;
   }
 
-  .pop .contenedor .cartelera-flex{
+  .pop .contenedor .cartelera-flex {
     height: 70vh;
     margin-bottom: 10vh;
   }
 
-  .section-form h1{
+  .section-form h1 {
     font-size: 1.7rem;
     width: 50vw;
     margin-bottom: 20px;
   }
-  .section-form p{
+  .section-form p {
     margin-bottom: 20px;
   }
 
@@ -554,33 +551,34 @@ font-size: .7rem  ;
     width: 90vw;
   }
 
-  .formbox{
+  .formbox {
     width: 80vw;
     z-index: 1;
   }
-  .icon-arrow{
-      left: 75vw;
+  .icon-arrow {
+    left: 75vw;
   }
 
   .arrow {
-    padding:8px;
+    padding: 8px;
   }
 
-  .pop-2{
+  .pop-2 {
     display: none;
   }
 
-  .pop-1{
-    display: none;}
+  .pop-1 {
+    display: none;
+  }
 
-  .section-form{
+  .section-form {
     background-image: url(img/pop-efect.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 100vw;
   }
-  
-  .section-message{
+
+  .section-message {
     text-align: center;
   }
 }

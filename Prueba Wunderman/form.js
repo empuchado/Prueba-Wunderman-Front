@@ -76,7 +76,7 @@ reseñaInput.addEventListener("keyup", () => {
     ) {
       const errorMessage = document.createElement("div");
       errorMessage.className = "error-message";
-      errorMessage.textContent = "Review must be at least 10 characters long.";
+      errorMessage.textContent = "La Reseña debe tener al menos 10 caracteres";
       reseñaInput.insertAdjacentElement("afterend", errorMessage);
     }
   } else {
@@ -103,14 +103,10 @@ finalizarButton.addEventListener("click", (event) => {
   if (!nombreValid || !emailValid || !reseñaValid) {
     alert("Por favor, llene todos los campos correctamente.");
   } else {
-    console.log("el pepe")
     sectionMessage.style.display = "flex";
     sectionForm.style.display = "none";
-    console.log(nameMessage)
-    nameMessage.textContent = nameMessage.textContent + nombre.value + "!"; 
-    reseñaMessage.textContent = reseñaMessage.textContent +selectPeliculas.value + '"ha sido enviada!';
-
+    nameMessage.textContent = nameMessage.textContent + nombre.value + "!";
+    reseñaMessage.textContent =
+      reseñaMessage.textContent + selectPeliculas.value + '"ha sido enviada!';
   }
 });
-
-

@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const buyTicket = document.createElement("a");
     buyTicket.textContent = "Comprar ticket";
-    buyTicket.href = "#"; // Add your ticket purchase link here
+    buyTicket.href = "#";
 
     div.appendChild(title);
     div.appendChild(poster);
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(handleFetchError);
   }
 
-  fetchAndDisplayMovies(); // Fetch JSON data and display movies when the page loads
+  fetchAndDisplayMovies();
 });
 
 function handleFetchError(error) {
@@ -80,7 +80,7 @@ function fetchAndDisplayMovies() {
 
 document.addEventListener("DOMContentLoaded", function () {
   let currentMovieIndex = 0;
-  let moviesData = []; // Array to store the fetched movie data
+  let moviesData = [];
 
   function handleMovieFetchError(error) {
     console.error("Error fetching movie data:", error);
@@ -90,37 +90,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstMovie = moviesData[index];
 
     if (posterImg && sinopsisTitle && sinopsisPlot && bg && trailer) {
-      // Set poster image source
       posterImg.src = firstMovie.Poster;
       posterImg.alt = firstMovie.Title;
 
-      // Set trailer link
       trailer.href = firstMovie.Trailer;
 
-      // Set sinopsis title
       sinopsisTitle.textContent = firstMovie.Title;
 
-      // Set sinopsis plot
       sinopsisPlot.textContent = firstMovie.Plot;
 
-      // Set background image
       bg.style.backgroundImage = `url(${firstMovie.Poster})`;
 
       puntaje.textContent = firstMovie.imdbRating + "/10";
 
-      // Handle arrow visibility based on the current movie index
       if (index === 0) {
-        arrwLeft.style.display = "none"; // Hide left arrow for the first movie
-        arrwRight.style.display = "flex"; // Show right arrow for the first movie
+        arrwLeft.style.display = "none";
+        arrwRight.style.display = "flex";
       } else if (index === 2) {
-        arrwRight.style.display = "none"; // Hide right arrow for the third movie
-        arrwLeft.style.display = "flex"; // Show left arrow for the third movie
+        arrwRight.style.display = "none";
+        arrwLeft.style.display = "flex";
       } else {
-        arrwRight.style.display = "flex"; // Show left arrow for the second movie
-        arrwLeft.style.display = "flex"; // Show right arrow for the second movie
+        arrwRight.style.display = "flex";
+        arrwLeft.style.display = "flex";
       }
     } else {
-      console.error("One or more elements not found");
+      console.error("Uno o mas elementos no encontrados");
     }
   }
 
@@ -153,8 +147,8 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("movies.json")
     .then((response) => response.json())
     .then((data) => {
-      moviesData = data; // Store the fetched movie data
-      updateMovieDisplay(currentMovieIndex); // Display the initial movie
+      moviesData = data;
+      updateMovieDisplay(currentMovieIndex);
     })
     .catch(handleMovieFetchError);
 });
