@@ -70,6 +70,10 @@ nav {
   flex-direction: row;
 }
 
+.tkt-header{
+  display: none;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -440,4 +444,67 @@ form .btn {
 
 .section-message p:first-of-type{
   color: var(--txt-back);
+}
+
+@media screen and (max-width: 375px) {
+  .flex-header ul {
+    display: none;
+  }
+
+  .tkt-header{
+    display: block;
+    height: 70px;
+    width: auto;
+  }
+
+  .grilla-hero {
+display: flex;
+    width: 95vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .sinopsis{
+    display: none;
+  }
+
+  .arrw-left{
+    width: 15vw;
+    position: absolute;
+    top: 40vh;
+    left: 0;
+  }
+  .arrw-right{
+    width: 15vw;
+    position: absolute;
+    top: 40vh;
+    left: 85vw;
+  }
+
+  .poster{
+    width: 60vw;
+    margin-top: 100px;
+  }
+
+  .extra-info{
+    width: 30px;
+    height: 30px;
+    padding: 23px;
+    border-radius: 10px;
+  }
+
+  .extra-info p{
+font-size: .7rem  ;
+  }
+
+  .sinopsis .sinopsis-txt h1{
+    display: block;
+    position: absolute;
+    top: 90vh;
+    left: 0;
+  }
+
+
 }
