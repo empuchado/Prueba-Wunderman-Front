@@ -527,11 +527,17 @@ font-size: .7rem  ;
     overflow-x: auto;
     -ms-overflow-style: none; /* Hides the scrollbar in IE and Edge */
     scrollbar-width: none;
+    align-items: flex-start;
   }
 
   .pelicula {
+    margin-top: 10vh;
     width: 50vw;
     flex: 0 0 auto;
   }
 
+  .pop .contenedor .cartelera-flex{
+    height: 70vh;
+    margin-bottom: 10vh;
+  }
 }
