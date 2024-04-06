@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function fetchAndDisplayMovies() {
-    fetch("movies.json")
+    fetch("https://gist.githubusercontent.com/empuchado/4a582285c7cef873b8dcbf566a4ae4b6/raw/adbf460bc6bf8845ad199f363c509a37cf0f9f8d/Movie.json")
       .then((response) => response.json())
       .then(displayMovies)
       .catch(handleFetchError);
@@ -72,7 +72,7 @@ function displayMovies(data) {
 }
 
 function fetchAndDisplayMovies() {
-  fetch("movies.json")
+  fetch("https://gist.githubusercontent.com/empuchado/4a582285c7cef873b8dcbf566a4ae4b6/raw/adbf460bc6bf8845ad199f363c509a37cf0f9f8d/Movie.json")
     .then((response) => response.json())
     .then(displayMovies)
     .catch(handleFetchError);
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .querySelector(".arrw-right")
     .addEventListener("click", handleRightArrowClick);
 
-  fetch("movies.json")
+  fetch("https://gist.githubusercontent.com/empuchado/4a582285c7cef873b8dcbf566a4ae4b6/raw/adbf460bc6bf8845ad199f363c509a37cf0f9f8d/Movie.json")
     .then((response) => response.json())
     .then((data) => {
       moviesData = data;

@@ -12,7 +12,7 @@ const nameMessage = document.querySelector("#name-message");
 const reseñaMessage = document.querySelector("#reseña-message");
 
 window.addEventListener("load", async () => {
-  const response = await fetch("movies.json");
+  const response = await fetch("https://gist.githubusercontent.com/empuchado/4a582285c7cef873b8dcbf566a4ae4b6/raw/adbf460bc6bf8845ad199f363c509a37cf0f9f8d/Movie.json");
   const movies = await response.json();
 
   movies.forEach((movie) => {
