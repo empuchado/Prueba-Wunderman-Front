@@ -522,5 +522,16 @@ font-size: .7rem  ;
     font-size: 1rem;
   }
 
+  .cartelera-flex{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* Hides the scrollbar in IE and Edge */
+    scrollbar-width: none;
+  }
+
+  .pelicula {
+    width: 50vw;
+    flex: 0 0 auto;
+  }
 
 }
