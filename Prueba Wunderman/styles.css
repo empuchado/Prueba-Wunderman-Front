@@ -580,4 +580,7 @@ font-size: .7rem  ;
     background-size: 100vw;
   }
   
+  .section-message{
+    text-align: center;
+  }
 }
