@@ -126,13 +126,14 @@ nav ul li:first-child {
 }
 .poster {
   grid-area: 1 / 2 / 4 / 4;
+  position: relative;
 }
 
 .extra-info {
   position: absolute;
   background-color: var(--btn-color);
-  top: 20vh;
-  left: 15vw;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
@@ -141,6 +142,7 @@ nav ul li:first-child {
   padding: 15px;
   height: 60px;
   width: 60px;
+  border-radius: 5px;
 }
 
 .extra-info img {
@@ -160,7 +162,6 @@ nav ul li:first-child {
 
 .poster img {
   border-radius: 12px;
-  position: relative;
 }
 .sinopsis {
   grid-area: 1 / 4 / 3 / 8;
