@@ -107,6 +107,6 @@ finalizarButton.addEventListener("click", (event) => {
     sectionForm.style.display = "none";
     nameMessage.textContent = nameMessage.textContent + nombre.value + "!";
     reseñaMessage.textContent =
-      reseñaMessage.textContent + selectPeliculas.value + '"ha sido enviada!';
+      reseñaMessage.textContent + selectPeliculas.value + '" ha sido enviada!';
   }
 });
